@@ -34,7 +34,7 @@ class SpeechRecognition {
   Future activate() => _channel.invokeMethod("speech.activate");
 
   /// start listening
-  Future listen({String locale='en_US'}) =>
+  Future listen({String locale}) =>
       _channel.invokeMethod("speech.listen", locale);
 
   /// cancel speech
